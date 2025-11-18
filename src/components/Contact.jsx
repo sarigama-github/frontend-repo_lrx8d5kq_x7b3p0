@@ -4,6 +4,7 @@ export default function Contact(){
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
   const [status, setStatus] = useState(null)
   const baseUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000'
+  const whatsapp = '919769239144'
 
   const handle = (e) => {
     const { name, value } = e.target
@@ -32,10 +33,16 @@ export default function Contact(){
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-start">
         <div>
           <h2 className="text-3xl font-bold text-slate-900">Contact Us</h2>
-          <p className="text-slate-600 mt-2">Call/WhatsApp: <a href="tel:+919000000000" className="text-sky-700 font-semibold">+91 90000 00000</a> · <a href="https://wa.me/919000000000" className="text-sky-700 font-semibold" target="_blank">WhatsApp</a></p>
-          <p className="text-slate-600 mt-1">Address: 123, Main Street, Your City</p>
+          <p className="text-slate-600 mt-2">Mobile & WhatsApp: <a href="tel:+919769239144" className="text-sky-700 font-semibold">+91 9769239144</a> · <a href={`https://wa.me/${whatsapp}`} className="text-sky-700 font-semibold" target="_blank">Chat on WhatsApp</a></p>
+          <p className="text-slate-600 mt-1">Location: Goregaon (E), Pathanwadi, Near Pipadipada</p>
           <div className="mt-6 rounded-xl overflow-hidden border border-slate-100">
-            <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609644377!2d72.74109834916568!3d19.08219783925295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA0JzU2LjAiTiA3MsKwNDQnMzIuMCJF!5e0!3m2!1sen!2sin!4v1614032123456!5m2!1sen!2sin" width="100%" height="260" style={{border:0}} allowFullScreen="" loading="lazy"></iframe>
+            <iframe title="map" src="https://www.google.com/maps?q=Goregaon%20(E)%20Pathanwadi%20Near%20Pipadipada&output=embed" width="100%" height="260" style={{border:0}} allowFullScreen="" loading="lazy"></iframe>
+          </div>
+          <div className="mt-4">
+            <a href={`https://wa.me/${whatsapp}`} target="_blank" className="inline-flex items-center gap-2 rounded-full bg-green-500 text-white px-4 py-2 font-semibold hover:bg-green-600">
+              <span>💬</span>
+              <span>Chat on WhatsApp</span>
+            </a>
           </div>
         </div>
         <div className="bg-white rounded-xl shadow border border-slate-100 p-6">

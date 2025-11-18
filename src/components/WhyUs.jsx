@@ -1,10 +1,11 @@
 export default function WhyUs() {
   const items = [
-    { title: 'Doorstep Pickup', desc: 'Convenient pickup from your home at your preferred time.' },
-    { title: 'Affordable Pricing', desc: 'Transparent, pocket-friendly pricing for every garment.' },
-    { title: 'Hygienic Washing', desc: 'Clean machines, quality detergents, and neat finishing.' },
-    { title: 'Fast Delivery', desc: 'Quick turnaround to keep your wardrobe ready.' },
-    { title: 'Neat & Clean Ironing', desc: 'Crisp ironing for a sharp, polished look.' },
+    { title: 'Doorstep pickup from Goregaon (E)', desc: 'Convenient pickup right from your location in Goregaon East.' },
+    { title: 'Affordable charges', desc: 'Transparent, pocket-friendly pricing for every garment.' },
+    { title: 'Hygienic washing', desc: 'Clean machines, quality detergents, and careful handling.' },
+    { title: 'Neat & crisp ironing', desc: 'Crisp finishing for a sharp, polished look.' },
+    { title: 'On-time delivery', desc: 'Reliable turnaround so you’re never waiting on clothes.' },
+    { title: 'WhatsApp ordering available', desc: 'Place orders or ask questions instantly via WhatsApp.' },
   ]
   return (
     <section className="py-14 bg-white">

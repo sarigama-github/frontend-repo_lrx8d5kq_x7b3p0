@@ -12,6 +12,7 @@ import BeforeAfterSlider from './components/BeforeAfterSlider'
 
 function App() {
   const [open, setOpen] = useState(false)
+  const whatsapp = '919769239144'
 
   return (
     <div className="min-h-screen bg-white text-slate-800">
@@ -28,7 +29,7 @@ function App() {
       </main>
 
       {/* WhatsApp floating */}
-      <a href="https://wa.me/919000000000" target="_blank" className="fixed bottom-6 right-6 z-40 inline-flex items-center justify-center w-12 h-12 rounded-full bg-green-500 text-white shadow-lg hover:bg-green-600">
+      <a href={`https://wa.me/${whatsapp}`} target="_blank" className="fixed bottom-6 right-6 z-40 inline-flex items-center justify-center w-12 h-12 rounded-full bg-green-500 text-white shadow-lg hover:bg-green-600">
         <span className="text-xl">🟢</span>
       </a>
 
