@@ -9,6 +9,9 @@ import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import BookingModal from './components/BookingModal'
 import BeforeAfterSlider from './components/BeforeAfterSlider'
+import Process from './components/Process'
+import Gallery from './components/Gallery'
+import CTA from './components/CTA'
 
 function App() {
   const [open, setOpen] = useState(false)
@@ -19,11 +22,14 @@ function App() {
       <Navbar onBookClick={() => setOpen(true)} />
       <main>
         <Hero onBookClick={() => setOpen(true)} />
+        <Process />
         <Services />
         <Pricing />
+        <Gallery />
         <WhyUs />
         <BeforeAfterSlider />
         <Testimonials />
+        <CTA />
         <FAQ />
         <Contact />
       </main>
